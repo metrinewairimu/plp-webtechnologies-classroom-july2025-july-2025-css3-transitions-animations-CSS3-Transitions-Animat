@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bringing Web Pages to Life with CSS & JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1> Interactive CSS & JS Experience</h1>
+    <p>Explore animations, reusable JS functions, and dynamic UI effects</p>
+  </header>
+
+  <!-- Part 1: Button with hover and active effects -->
+  <section>
+    <h2>Part 1: CSS Transitions & Animations</h2>
+    <button id="animateBoxBtn" class="btn">Animate Box</button>
+  </section>
+
+  <!-- Animated box for Part 3 -->
+  <div id="box" class="box" aria-label="Animated box"></div>
+
+  <!-- Part 2: JavaScript functions — Greeting and Counter -->
+  <section>
+    <h2>Part 2: JavaScript Functions & Scope</h2>
+
+    <div class="greeting-container">
+      <input id="nameInput" type="text" placeholder="Enter your name" aria-label="Name input" />
+      <button id="greetBtn" class="btn">Greet Me!</button>
+      <p id="greetingMessage" aria-live="polite" role="alert"></p>
+    </div>
+
+    <div class="counter-container">
+      <button id="incrementBtn" class="btn">Increment Counter</button>
+      <p>Counter: <span id="counterValue">0</span></p>
+    </div>
+  </section>
+
+  <!-- Part 3: Card flip animation -->
+  <section>
+    <h2>Part 3: Combining CSS & JS</h2>
+    <div class="card-container" tabindex="0" aria-label="Flip card example">
+      <div class="card" id="card">
+        <div class="card-front">Front</div>
+        <div class="card-back">Back</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loading spinner -->
+  <section>
+    <h2>Bonus: Loading Spinner Controlled by JS</h2>
+    <button id="toggleLoaderBtn" class="btn">Toggle Loader</button>
+    <div id="loader" class="loader" aria-hidden="true"></div>
+  </section>
+
+  <!-- Modal popup -->
+  <section>
+    <h2>Bonus: Modal Popup with Slide & Fade</h2>
+    <button id="showModalBtn" class="btn">Show Modal</button>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-content">
+        <button id="closeModalBtn" class="close-btn" aria-label="Close modal">&times;</button>
+        <h3>Modal Title</h3>
+        <p>This modal slides in and fades out with CSS animations!</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
